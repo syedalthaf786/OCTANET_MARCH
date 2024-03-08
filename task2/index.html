@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List with Image Upload and Delete</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="todo-list">
+  <h2>Image upload</h2>
+  <input type="text" id="task-input" placeholder="Enter file Name">
+  <br><br>
+  <input type="file" name="uploadfile" id="image-input" style="display:none;" accept=".jpg,.jpeg"/>
+   <label for="image-input"><img src="upload.png" width="80" height="80" id="upload"> </label>
+  <button onclick="addTask()" >Upload</button>
+</div>
+    <ul id="tasks"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
